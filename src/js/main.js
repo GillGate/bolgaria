@@ -41,14 +41,14 @@ $(function() {
 
     $(window).on('click', function(e) {
         if (clWidth < 993) {
-             if(!$(e.target.offsetParent).hasClass('header__list')) {
+            if(!$(e.target.offsetParent).hasClass('header__list')) {
                 $('.header__listWrapper').hide(300);
             }
         }
     });
 
     $('.header__bar').on('click', function() {
-        $(this).next().toggle(300);
+        $('.header__listWrapper').toggle(300);
     });
 
     $('input[type=tel]').mask("+9 (999) 999-9999", {autoclear: false});

@@ -176,7 +176,6 @@ header.main {
 	line-height: 46px;
 	text-align: center;
 	font-size: 1.333rem;
-	margin-left: -23px;
 	left: 50%;
 	bottom: 100px; 
 	z-index: 10;
@@ -393,7 +392,7 @@ header.main {
 	color: #000;
 	position: relative;
 
-	&_image {
+	&__image {
 		position: absolute;
 		z-index: 10;
 		top: 0px;
@@ -1034,6 +1033,23 @@ header.main {
 }
 
 @media screen and (max-width: 670px) {
+	.header__list {
+		margin-left: auto;
+	}
+
+	.head__wrapper {
+		text-align: center;
+	}
+
+	.head__title {
+		letter-spacing: 5px;
+	}
+
+	.head__title--main {
+		letter-spacing: 10px;
+		margin-top: 190px;
+	}
+
 	.reviewSlider {
 		width: 445px;
 	}
@@ -1046,6 +1062,32 @@ header.main {
 
 	.connect__list {
 		margin-left: -45px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.numbers {
+		display: none;
+	}
+
+	.head__title {
+		font-size: 1.8rem;
+	}
+
+	.head__title--main {
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-size: 2rem !important;
+	}
+
+	.reviewSlider {
+		width: 100%;
+	}
+
+	.reviewSlider .slick-slide {
+		width: 100%;
 	}
 }
 
